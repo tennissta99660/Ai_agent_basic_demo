@@ -17,7 +17,7 @@ elif provider == "OpenAI":
 allow_web_search = st.checkbox("Allow web search")
 user_query = prompt = st.text_area("Enter your query:", height = 150, placeholder = "Ask Anything")
 
-API_URL = "https://aiagentbasicdemo-production.up.railway.app"
+API_URL = "https://aiagentbasicdemo-production.up.railway.app/chat"
 if st.button("Ask Agent!"):
     if user_query.strip():
       #step 2: connect wiht backend via url
